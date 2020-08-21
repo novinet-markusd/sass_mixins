@@ -30,7 +30,7 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Methoden
 
-### headlines() <a name="headlines"></a>
+### headlines () <a name="headlines"></a>
 
 Setzte Styling für alle Überschriften Tags.
 
