@@ -32,8 +32,7 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 
 ### headlines() <a name="headlines"></a>
 
-Setzte Werte für alle Überschriften Tags.
-Erleichtert Schreibarbeit und verbessert die Lesbarkeit.
+Setzte Styling für alle Überschriften Tags.
 
 **Code**
 
@@ -51,10 +50,10 @@ ___
 
 ### font-size ($size, $important: 0) <a name="font-size"></a>
 
-berechnet die font size von pixel Angabe in rem
+Berechnet die Schriftgröße von px zu rem.
 
 WICHTIG:
-bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
+Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 
 **Code**
 
@@ -79,7 +78,7 @@ ___
 
 ### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}px) <a name="mobile"></a>
 
-klassischer breakpoint alles unter ... breite
+Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 
 **Code**
 
@@ -97,7 +96,7 @@ ___
 
 ### desktop ($bp: #{$mixins_default_breakpoint_desktop}px) <a name="desktop"></a>
 
-klassischer breakpoint alles über ... breite
+Setze Styling für alle Bildschirmbreiten größer als $bp.
 
 **Code**
 
@@ -115,13 +114,14 @@ ___
 
 ### video-ratio ($container: '.nv-container') <a name="video-ratio"></a>
 
-html struktur sollte so aussehen:
+Erstelle einen Container im Format 16:9.
+Nützlich für Videos oder Bilder.
+
+Beispiel HTML-Struktur
    
     <div class="nv-container">
         <iframe></iframe>
     </div>
-
-nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
 
 **Code**
 
@@ -149,15 +149,16 @@ ___
 
 ### width-based-on-quantity ($element, $maxItems: 5, $gap: 0) <a name="width-based-on-quantity"></a>
 
-berechnet die breite eines items anhand der anzahl seiner geschwister
-bsp: 
+Berechnet die Breite eines Elements anhand der Anzahl seiner Geschwister.
+
+Beispiel HTML-Struktur:
 
     <div>
         <span>Test</span>
         <span>Test</span>
     </div>
 
--> span width 50%
+Das Element "span" ist also 50% breit.
 
 **Code**
 
