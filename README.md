@@ -48,7 +48,7 @@ Setzte Styling für alle Überschriften Tags.
 
 ___
 
-### font-size ($size, $important: 0) <a name="font-size"></a>
+### font-size ($size, $important: false) <a name="font-size"></a>
 
 Berechnet die Schriftgröße von px zu rem.
 
