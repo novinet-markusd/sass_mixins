@@ -1,8 +1,8 @@
 # Sass Mixins
 
 ## Inhalt
-1. Beschreibung (#Beschreibung)
-1. Anpassungen (#Anpassungen)
+1. [Beschreibung](#Beschreibung)
+1. [Anpassungen](#Anpassungen)
 
 
 ## Beschreibung
