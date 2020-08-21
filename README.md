@@ -148,7 +148,7 @@ Code
 
 ___
 
-### width-based-on-quantity($element, $maxItems: 5, $gap: 0)
+### width-based-on-quantity ($element, $maxItems: 5, $gap: 0)
 
 berechnet die breite eines items anhand der anzahl seiner geschwister
 bsp: 
@@ -163,7 +163,7 @@ bsp:
 Code
 
 ```scss
-@mixin width-based-on-quantity ($element, $maxItems: 5, $gap: 0)
+@mixin width-based-on-quantity($element, $maxItems: 5, $gap: 0)
 {
     #{$element}:first-child:nth-last-child(1) 
     {
