@@ -4,11 +4,12 @@
 1. [Beschreibung](#Beschreibung)
 1. [Anpassungen](#Anpassungen)
 1. [Methoden](#Methoden)
-   * [headlines](#headlines)
+    * [headlines](#headlines)
     * [font-size](#font-size)
-  * [mobile](#mobile)
-  * [desktop](#desktop)
-
+    * [mobile](#mobile)
+    * [desktop](#desktop)
+    * [video-ratio](#video-ratio)
+    * [width-based-on-quantity](#width-based-on-quantity)
 
 ## Beschreibung
 
@@ -107,6 +108,82 @@ Code
     @media screen and (min-width: #{$bp})
     {
         @content;
+    }
+}
+```
+
+___
+
+### video-ratio
+
+    html struktur sollte so aussehen:
+
+    ```html
+    <div class="nv-container">
+        <iframe></iframe>
+    </div>
+    ```
+
+    nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
+
+Code
+
+```scss
+@mixin video-ratio($container: '.nv-container')
+{
+    #{$container}
+    {
+        padding-top: calc(100% * (9 / 16));
+        position: relative;
+
+        iframe 
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+```
+
+___
+
+### width-based-on-quantity
+
+    berechnet die breite eines items anhand der anzahl seiner geschwister
+
+    bsp: 
+
+    ```html
+    <div>
+        <span>Test</span>
+        <span>Test</span>
+    </div>
+    ```
+
+    -> span width 50%
+
+Code
+
+```scss
+@mixin width-based-on-quantity($element, $maxItems: 5, $gap: 0)
+{
+    #{$element}:first-child:nth-last-child(1) 
+    {
+        width: 100%;
+        @content;
+    }
+
+    @for $i from 2 through $maxItems 
+    {
+        #{$element}:first-child:nth-last-child(#{$i}),
+        #{$element}:first-child:nth-last-child(#{$i}) ~ #{$element} 
+        {
+            width: calc(100% / #{$i} - #{$gap}px);
+            @content;
+        }
     }
 }
 ```
