@@ -1,5 +1,6 @@
 # Sass Mixins Datei
-    Ein Repository um hilfreiche Sass Mixins abzulegen, damit man sie bei Projektstart schnell reinkopiern kann.
+    Ein Repository um hilfreiche Sass Mixins abzulegen, 
+    damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Nach kopieren/einfügen noch anpassen:
 
