@@ -4,6 +4,7 @@
 1. [Beschreibung](#Beschreibung)
 1. [Anpassungen](#Anpassungen)
 1. [Methoden](#Methoden)
+  * [headlines](#headlines)
 
 
 ## Beschreibung
@@ -28,6 +29,7 @@
 ### headlines
 
 **Beschreibung**
+
     setzte werte für alle headlines
     erleichtert schreibarbeit und verbessert lesbarkeit
 
