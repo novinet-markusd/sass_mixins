@@ -4,7 +4,7 @@
 
 ## Nach kopieren/einfügen noch anpassen:
 
-### Breakpoint Variable $mixins_breakpoint_default_desktop
+### $mixins_breakpoint_default_desktop (Breakpoint Variable)
 
     Für Bootstrap Wert: 992
     Für Uikit Wert: 960
