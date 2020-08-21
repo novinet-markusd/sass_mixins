@@ -163,7 +163,7 @@ bsp:
 Code
 
 ```scss
-@mixin width-based-on-quantity($element, $maxItems: 5, $gap: 0)
+@mixin width-based-on-quantity ($element, $maxItems: 5, $gap: 0)
 {
     #{$element}:first-child:nth-last-child(1) 
     {
