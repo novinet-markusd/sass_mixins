@@ -198,7 +198,7 @@ Beispiel HTML-Struktur
 **Beispiel**
 
 ```scss
-.module-vidoe 
+.module-video 
 {
     @include video-ratio;
 }
