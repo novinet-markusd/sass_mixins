@@ -30,7 +30,7 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Methoden
 
-### headlines
+### headlines()
 
 Setzte Werte für alle Überschriften Tags.
 Erleichtert Schreibarbeit und verbessert die Lesbarkeit.
@@ -148,17 +148,17 @@ Code
 
 ___
 
-### width-based-on-quantity
+### width-based-on-quantity($element, $maxItems: 5, $gap: 0)
 
-    berechnet die breite eines items anhand der anzahl seiner geschwister
-    bsp: 
+berechnet die breite eines items anhand der anzahl seiner geschwister
+bsp: 
 
     <div>
         <span>Test</span>
         <span>Test</span>
     </div>
 
-    -> span width 50%
+-> span width 50%
 
 Code
 
