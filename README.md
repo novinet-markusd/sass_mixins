@@ -1,5 +1,5 @@
 # Sass Mixins Datei
-## Einfach zu kopieren bei Projektstart
+    Ein Repository um hilfreiche Sass Mixins abzulegen, damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Nach kopieren/einfügen noch anpassen:
 
