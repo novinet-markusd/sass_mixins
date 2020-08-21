@@ -35,7 +35,7 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 Setzte Werte für alle Überschriften Tags.
 Erleichtert Schreibarbeit und verbessert die Lesbarkeit.
 
-Code
+**Code**
 
 ```scss
 @mixin headlines()
@@ -51,13 +51,12 @@ ___
 
 ### font-size ($size, $important: 0) <a name="font-size"></a>
 
-    berechnet die font size von pixel Angabe in rem
+berechnet die font size von pixel Angabe in rem
 
-    WICHTIG:
+WICHTIG:
+bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
 
-    bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
-
-Code
+**Code**
 
 ```scss
 @mixin font-size($size, $important: 0)
@@ -80,9 +79,9 @@ ___
 
 ### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}px) <a name="mobile"></a>
 
-    klassischer breakpoint alles unter ... breite
+klassischer breakpoint alles unter ... breite
 
-Code
+**Code**
 
 ```scss
 @mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
@@ -98,9 +97,9 @@ ___
 
 ### desktop ($bp: #{$mixins_default_breakpoint_desktop}px) <a name="desktop"></a>
 
-    klassischer breakpoint alles über ... breite
+klassischer breakpoint alles über ... breite
 
-Code
+**Code**
 
 ```scss
 @mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
@@ -116,15 +115,15 @@ ___
 
 ### video-ratio ($container: '.nv-container') <a name="video-ratio"></a>
 
-    html struktur sollte so aussehen:
+html struktur sollte so aussehen:
    
     <div class="nv-container">
         <iframe></iframe>
     </div>
 
-    nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
+nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
 
-Code
+**Code**
 
 ```scss
 @mixin video-ratio($container: '.nv-container')
@@ -160,7 +159,7 @@ bsp:
 
 -> span width 50%
 
-Code
+**Code**
 
 ```scss
 @mixin width-based-on-quantity($element, $maxItems: 5, $gap: 0)
