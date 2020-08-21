@@ -5,6 +5,7 @@
 1. [Anpassungen](#Anpassungen)
 1. [Methoden](#Methoden)
   * [headlines](#headlines)
+  * [font-size](#font-size)
 
 
 ## Beschreibung
@@ -41,5 +42,34 @@
     {
         @content;
     }
+}
+```
+
+
+### font-size
+
+**Beschreibung**
+
+    berechnet die font size von pixel Angabe in rem
+
+    WICHTIG:
+
+    bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
+
+**Code**
+```scss
+@mixin font-size($size, $important: 0)
+{
+    $value: $size / $mixins_default_font_size;
+
+    @if $important == 0
+    {
+        font-size: #{$value}rem;
+    }
+    @else
+    {
+        font-size: #{$value}rem !important;
+    }
+
 }
 ```
