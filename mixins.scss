@@ -3,7 +3,8 @@
 alle Variablen die gebraucht werden um die Mixins zu betreiben 
 **/
 
-$mixins_breakpoint_default_desktop: 992;
+$mixins_default_breakpoint_desktop: 992;
+$mixins_default_font_size: 16;
 
 
 /**
@@ -30,7 +31,7 @@ bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
 
 @mixin font-size($size, $important: 0)
 {
-    $value: $size / 16;
+    $value: $size / $mixins_default_font_size;
 
     @if $important == 0
     {
@@ -48,7 +49,7 @@ bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
 klassischer breakpoint alles unter ... breite
 **/
 
-@mixin mobile($bp: #{$mixins_breakpoint_default_desktop - 1}px)
+@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
 {
     @media screen and (max-width: #{$bp})
     {
@@ -61,7 +62,7 @@ klassischer breakpoint alles unter ... breite
 klassischer breakpoint alles über ... breite
 **/
 
-@mixin desktop($bp: #{$mixins_breakpoint_default_desktop}px)
+@mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
 {
     @media screen and (min-width: #{$bp})
     {

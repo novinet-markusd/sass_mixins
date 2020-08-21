@@ -8,3 +8,8 @@
 
     Für Bootstrap Wert: 992
     Für Uikit Wert: 960
+
+### $mixins_default_font_size (Font Size Variable)
+
+    Standardmäßig ist das bei Browsern 16px
+    Unbedingt ohne px Angabe damit rem berechnung funktioniert
