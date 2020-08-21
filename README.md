@@ -133,7 +133,7 @@ Beispiel HTML-Struktur
         padding-top: calc(100% * (9 / 16));
         position: relative;
 
-        iframe 
+        #{$element} 
         {
             position: absolute;
             width: 100%;
