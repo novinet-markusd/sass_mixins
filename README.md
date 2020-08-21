@@ -58,11 +58,11 @@ Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 **Code**
 
 ```scss
-@mixin font-size($size, $important: 0)
+@mixin font-size($size, $important: false)
 {
     $value: $size / $mixins_default_font_size;
 
-    @if $important == 0
+    @if $important == true
     {
         font-size: #{$value}rem;
     }
