@@ -13,8 +13,8 @@
 
 ## Beschreibung
 
-    Ein Repository um hilfreiche Sass Mixins abzulegen, 
-    damit man sie bei Projektstart schnell reinkopiern kann.
+Ein Repository um hilfreiche Sass Mixins abzulegen, 
+damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Anpassungen
 
