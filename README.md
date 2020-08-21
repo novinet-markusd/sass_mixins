@@ -4,8 +4,8 @@
 1. [Beschreibung](#Beschreibung)
 1. [Anpassungen](#Anpassungen)
 1. [Methoden](#Methoden)
-  * [headlines](#headlines)
-  * [font-size](#font-size)
+   * [headlines](#headlines)
+    * [font-size](#font-size)
   * [mobile](#mobile)
   * [desktop](#desktop)
 
