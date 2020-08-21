@@ -148,7 +148,7 @@ Code
 
 ___
 
-### [width-based-on-quantity] width-based-on-quantity ($element, $maxItems: 5, $gap: 0)
+### width-based-on-quantity ($element, $maxItems: 5, $gap: 0) <a name="width-based-on-quantity"></a>
 
 berechnet die breite eines items anhand der anzahl seiner geschwister
 bsp: 
