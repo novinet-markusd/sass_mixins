@@ -5,5 +5,5 @@
 
 ### Breakpoint Variable $mixins_breakpoint_default_desktop
 
-    * Für Bootstrap Wert: 992
-    * Für Uikit Wert: 960
+    Für Bootstrap Wert: 992
+    Für Uikit Wert: 960
