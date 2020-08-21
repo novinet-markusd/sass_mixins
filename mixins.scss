@@ -1,6 +1,6 @@
 
 /**
-alle Variablen die gebraucht werden um die Mixins zu betreiben 
+Alle Variablen, die gebraucht werden, um die Mixins zu betreiben. 
 **/
 
 $mixins_default_breakpoint_desktop: 992;
@@ -8,8 +8,7 @@ $mixins_default_font_size: 16;
 
 
 /**
-setzte werte für alle headlines
-erleichtert schreibarbeit und verbessert lesbarkeit
+Setzte Styling für alle Überschriften Tags.
 **/ 
 
 @mixin headlines()
@@ -22,11 +21,10 @@ erleichtert schreibarbeit und verbessert lesbarkeit
 
 
 /**
-berechnet die font size von pixel Angabe in rem
+Berechnet die Schriftgröße von px zu rem.
 
 WICHTIG:
-
-bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
+Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 **/
 
 @mixin font-size($size, $important: 0)
@@ -46,7 +44,7 @@ bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
 
 
 /**
-klassischer breakpoint alles unter ... breite
+Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 **/
 
 @mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
@@ -59,7 +57,7 @@ klassischer breakpoint alles unter ... breite
 
 
 /**
-klassischer breakpoint alles über ... breite
+Setze Styling für alle Bildschirmbreiten größer als $bp.
 **/
 
 @mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
@@ -72,11 +70,14 @@ klassischer breakpoint alles über ... breite
 
 
 /**
-html struktur sollte so aussehen:
+Erstelle einen Container im Format 16:9.
+Nützlich für Videos oder Bilder.
 
-<div class="nv-container"><iframe></iframe></div>
-
-nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
+Beispiel HTML-Struktur
+   
+    <div class="nv-container">
+        <iframe></iframe>
+    </div>
 **/
 
 @mixin video-ratio($container: '.nv-container')
@@ -99,16 +100,16 @@ nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
 
 
 /**
-berechnet die breite eines items anhand der anzahl seiner geschwister
+Berechnet die Breite eines Elements anhand der Anzahl seiner Geschwister.
 
-bsp: 
+Beispiel HTML-Struktur:
 
-<div>
-    <span>Test</span>
-    <span>Test</span>
-</div>
+    <div>
+        <span>Test</span>
+        <span>Test</span>
+    </div>
 
--> span width 50%
+Das Element "span" ist also 50% breit.
 **/
 
 @mixin width-based-on-quantity($element, $maxItems: 5, $gap: 0)
