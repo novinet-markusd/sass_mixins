@@ -117,12 +117,10 @@ ___
 ### video-ratio
 
     html struktur sollte so aussehen:
-
-    ```html
+   
     <div class="nv-container">
         <iframe></iframe>
     </div>
-    ```
 
     nützlich für youtube und andere videos die 16:9 dargestellt werden sollen
 
@@ -153,15 +151,12 @@ ___
 ### width-based-on-quantity
 
     berechnet die breite eines items anhand der anzahl seiner geschwister
-
     bsp: 
 
-    ```html
     <div>
         <span>Test</span>
         <span>Test</span>
     </div>
-    ```
 
     -> span width 50%
 
