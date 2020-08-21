@@ -6,6 +6,8 @@
 1. [Methoden](#Methoden)
   * [headlines](#headlines)
   * [font-size](#font-size)
+  * [mobile](#mobile)
+  * [desktop](#desktop)
 
 
 ## Beschreibung
@@ -29,8 +31,6 @@
 
 ### headlines
 
-**Beschreibung**
-
     setzte werte für alle headlines
     erleichtert schreibarbeit und verbessert lesbarkeit
 
@@ -45,10 +45,9 @@
 }
 ```
 
+___
 
 ### font-size
-
-**Beschreibung**
 
     berechnet die font size von pixel Angabe in rem
 
@@ -71,5 +70,39 @@
         font-size: #{$value}rem !important;
     }
 
+}
+```
+
+___
+
+### mobile
+
+    klassischer breakpoint alles unter ... breite
+
+**Code**
+```scss
+@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
+{
+    @media screen and (max-width: #{$bp})
+    {
+        @content;
+    }
+}
+```
+
+___
+
+### desktop
+
+    klassischer breakpoint alles über ... breite
+
+**Code**
+```scss
+@mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
+{
+    @media screen and (min-width: #{$bp})
+    {
+        @content;
+    }
 }
 ```
