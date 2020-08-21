@@ -46,6 +46,19 @@ Setzte Styling für alle Überschriften Tags.
 }
 ```
 
+**Beispiel**
+
+```scss
+.text 
+{
+    @include headlines()
+    {
+        color: red;
+        font-size: 24px;
+    }
+}
+```
+
 ___
 
 ### font-size ($size, $important: false) <a name="font-size"></a>
@@ -74,6 +87,15 @@ Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 }
 ```
 
+**Beispiel**
+
+```scss
+.text 
+{
+    @include font-size(24);
+}
+```
+
 ___
 
 ### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}px) <a name="mobile"></a>
@@ -92,6 +114,20 @@ Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 }
 ```
 
+**Beispiel**
+
+```scss
+.image 
+{
+    width: 50%;
+
+    @include mobile()
+    {
+        width: 100%;
+    }
+}
+```
+
 ___
 
 ### desktop ($bp: #{$mixins_default_breakpoint_desktop}px) <a name="desktop"></a>
@@ -106,6 +142,20 @@ Setze Styling für alle Bildschirmbreiten größer als $bp.
     @media screen and (min-width: #{$bp})
     {
         @content;
+    }
+}
+```
+
+**Beispiel**
+
+```scss
+.image 
+{
+    width: 100%;
+
+    @include desktop()
+    {
+        width: 50%;
     }
 }
 ```
@@ -145,6 +195,15 @@ Beispiel HTML-Struktur
 }
 ```
 
+**Beispiel**
+
+```scss
+.module-vidoe 
+{
+    @include video-ratio;
+}
+```
+
 ___
 
 ### width-based-on-quantity ($element, $maxItems: 5, $gap: 0) <a name="width-based-on-quantity"></a>
@@ -180,5 +239,14 @@ Das Element "span" ist also 50% breit.
             @content;
         }
     }
+}
+```
+
+**Beispiel**
+
+```scss
+.module-icons 
+{
+    @include vwidth-based-on-quantity('.nv-item', 2, 10px);
 }
 ```
