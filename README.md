@@ -3,6 +3,7 @@
 ## Inhalt
 1. [Beschreibung](#Beschreibung)
 1. [Anpassungen](#Anpassungen)
+1. [Methoden](#Methoden)
 
 
 ## Beschreibung
@@ -10,7 +11,7 @@
     Ein Repository um hilfreiche Sass Mixins abzulegen, 
     damit man sie bei Projektstart schnell reinkopiern kann.
 
-### Anpassungen
+## Anpassungen
 
 **$mixins_breakpoint_default_desktop (Breakpoint Variable)**
 
@@ -22,3 +23,21 @@
     Standardmäßig ist das bei Browsern 16px
     Unbedingt ohne px Angabe damit rem berechnung funktioniert
 
+## Methoden
+
+### headlines
+
+**Beschreibung**
+    setzte werte für alle headlines
+    erleichtert schreibarbeit und verbessert lesbarkeit
+
+**Code**
+`
+@mixin headlines()
+{
+    h1,h2,h3,h4,h5,h6 
+    {
+        @content;
+    }
+}
+`
