@@ -1,9 +1,9 @@
 # Sass Mixins Datei
 ## Einfach zu kopieren bei Projektstart
 
-## Bitte noch anpassen:
+## Nach kopieren/einfügen noch anpassen:
 
 1. ### Breakpoint Variable
 
-* Für Bootstrap: 992
-* Für Uikit: 960
+* Für Bootstrap Wert: 992
+* Für Uikit Wert: 960
