@@ -34,7 +34,8 @@
     setzte werte für alle headlines
     erleichtert schreibarbeit und verbessert lesbarkeit
 
-**Code**
+Code
+
 ```scss
 @mixin headlines()
 {
@@ -55,7 +56,8 @@ ___
 
     bei Aufruf keine Angabe in px sonst kann rem nicht berechnet werden
 
-**Code**
+Code
+
 ```scss
 @mixin font-size($size, $important: 0)
 {
@@ -79,7 +81,8 @@ ___
 
     klassischer breakpoint alles unter ... breite
 
-**Code**
+Code
+
 ```scss
 @mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
 {
@@ -96,7 +99,8 @@ ___
 
     klassischer breakpoint alles über ... breite
 
-**Code**
+Code
+
 ```scss
 @mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
 {
