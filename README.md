@@ -112,7 +112,7 @@ Setze Styling für alle Bildschirmbreiten größer als $bp.
 
 ___
 
-### video-ratio ($container: '.nv-container') <a name="video-ratio"></a>
+### video-ratio ($container: '.nv-container', $element: 'iframe') <a name="video-ratio"></a>
 
 Erstelle einen Container im Format 16:9.
 Nützlich für Videos oder Bilder.
@@ -126,7 +126,7 @@ Beispiel HTML-Struktur
 **Code**
 
 ```scss
-@mixin video-ratio($container: '.nv-container')
+@mixin video-ratio($container: '.nv-container', $element: 'iframe')
 {
     #{$container}
     {

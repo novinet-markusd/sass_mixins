@@ -80,14 +80,14 @@ Beispiel HTML-Struktur
     </div>
 **/
 
-@mixin video-ratio($container: '.nv-container')
+@mixin video-ratio($container: '.nv-container', $element: 'iframe')
 {
     #{$container}
     {
         padding-top: calc(100% * (9 / 16));
         position: relative;
 
-        iframe 
+        #{$element} 
         {
             position: absolute;
             width: 100%;
