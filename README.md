@@ -30,7 +30,7 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 
 ## Methoden
 
-### headlines()
+### headlines() <a name="headlines"></a>
 
 Setzte Werte für alle Überschriften Tags.
 Erleichtert Schreibarbeit und verbessert die Lesbarkeit.
@@ -49,7 +49,7 @@ Code
 
 ___
 
-### font-size
+### font-size ($size, $important: 0) <a name="font-size"></a>
 
     berechnet die font size von pixel Angabe in rem
 
@@ -78,7 +78,7 @@ Code
 
 ___
 
-### mobile
+### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}px) <a name="mobile"></a>
 
     klassischer breakpoint alles unter ... breite
 
@@ -96,7 +96,7 @@ Code
 
 ___
 
-### desktop
+### desktop ($bp: #{$mixins_default_breakpoint_desktop}px) <a name="desktop"></a>
 
     klassischer breakpoint alles über ... breite
 
@@ -114,7 +114,7 @@ Code
 
 ___
 
-### video-ratio
+### video-ratio ($container: '.nv-container') <a name="video-ratio"></a>
 
     html struktur sollte so aussehen:
    
