@@ -32,8 +32,8 @@ damit man sie bei Projektstart schnell reinkopiern kann.
 
 ### headlines
 
-    setzte werte für alle headlines
-    erleichtert schreibarbeit und verbessert lesbarkeit
+Setzte Werte für alle Überschriften Tags.
+Erleichtert Schreibarbeit und verbessert die Lesbarkeit.
 
 Code
 
