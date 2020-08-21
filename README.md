@@ -247,6 +247,6 @@ Das Element "span" ist also 50% breit.
 ```scss
 .module-icons 
 {
-    @include vwidth-based-on-quantity('.nv-item', 2, 10px);
+    @include width-based-on-quantity('.nv-item', 2, 10px);
 }
 ```
