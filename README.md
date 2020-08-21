@@ -1,4 +1,4 @@
-# Sass Mixins
+# <span style="color:red">S</span>ass Mixins
 
 ## Inhalt
 1. [Beschreibung](#Beschreibung)
