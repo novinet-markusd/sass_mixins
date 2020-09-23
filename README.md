@@ -105,9 +105,9 @@ Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 **Code**
 
 ```scss
-@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
+@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1})
 {
-    @media screen and (max-width: #{$bp})
+    @media screen and (max-width: #{$bp}px)
     {
         @content;
     }
@@ -137,9 +137,9 @@ Setze Styling für alle Bildschirmbreiten größer als $bp.
 **Code**
 
 ```scss
-@mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
+@mixin desktop($bp: #{$mixins_default_breakpoint_desktop})
 {
-    @media screen and (min-width: #{$bp})
+    @media screen and (min-width: #{$bp}px)
     {
         @content;
     }

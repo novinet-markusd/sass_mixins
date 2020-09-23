@@ -47,9 +47,9 @@ Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 **/
 
-@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1}px)
+@mixin mobile($bp: #{$mixins_default_breakpoint_desktop - 1})
 {
-    @media screen and (max-width: #{$bp})
+    @media screen and (max-width: #{$bp}px)
     {
         @content;
     }
@@ -60,9 +60,9 @@ Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 Setze Styling für alle Bildschirmbreiten größer als $bp.
 **/
 
-@mixin desktop($bp: #{$mixins_default_breakpoint_desktop}px)
+@mixin desktop($bp: #{$mixins_default_breakpoint_desktop})
 {
-    @media screen and (min-width: #{$bp})
+    @media screen and (min-width: #{$bp}px)
     {
         @content;
     }
