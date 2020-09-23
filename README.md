@@ -98,7 +98,7 @@ Bei Aufruf keine Angabe in px, sonst kann rem nicht berechnet werden.
 
 ___
 
-### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}px) <a name="mobile"></a>
+### mobile ($bp: #{$mixins_default_breakpoint_desktop - 1}) <a name="mobile"></a>
 
 Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 
@@ -130,7 +130,7 @@ Setze Styling für alle Bildschirmbreiten kleiner als $bp.
 
 ___
 
-### desktop ($bp: #{$mixins_default_breakpoint_desktop}px) <a name="desktop"></a>
+### desktop ($bp: #{$mixins_default_breakpoint_desktop}) <a name="desktop"></a>
 
 Setze Styling für alle Bildschirmbreiten größer als $bp.
 
